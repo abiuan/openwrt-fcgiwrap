@@ -8,15 +8,15 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=fcgiwrap
-PKG_VERSION:=1.1.0
+PKG_VERSION:=1.1.0-ab
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL=https://github.com/gnosek/fcgiwrap.git
-PKG_SOURCE_DATE:=2017-09-08
-PKG_SOURCE_VERSION:=99c942c90063c73734e56bacaa65f947772d9186
+PKG_SOURCE_URL=https://github.com/abiuan/fcgiwrap.git
+PKG_SOURCE_DATE:=2021-07-28
+PKG_SOURCE_VERSION:=97a1d7ec4b168e967463abc01a2ea8ed32df6dea
 #PKG_MIRROR_HASH:=
-PKG_MAINTAINER:=yhfudev
+PKG_MAINTAINER:=abiuan
 PKG_LICENSE:=MIT
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/fcgiwrap-$(PKG_VERSION)
@@ -35,7 +35,7 @@ define Package/fcgiwrap
   CATEGORY:=Network
   SUBMENU:=Web Servers/Proxies
   TITLE:=fcgiwrap for web server
-  URL:=https://github.com/gnosek/fcgiwrap.git
+  URL:=https://github.com/abiuan/fcgiwrap.git
   DEPENDS:=+spawn-fcgi +fcgi
   MENU:=0
 endef
